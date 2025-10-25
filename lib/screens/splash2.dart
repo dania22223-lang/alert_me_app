@@ -1,3 +1,4 @@
+import 'package:alert_me_app/screens/report_pages.dart';
 import 'package:flutter/material.dart';
 
 class Splash2 extends StatefulWidget {
@@ -13,7 +14,10 @@ class _Splash2State extends State<Splash2> {
     super.initState();
     // بعد 3 ثواني ننتقل للشاشة الثانية
     Future.delayed(const Duration(seconds: 3), () {
-     
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const ReportForm()),
+      );
     });
   }
 
