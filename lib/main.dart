@@ -1,5 +1,5 @@
 
-import 'package:alert_me_app/screens/report_pages.dart';
+import 'package:alert_me_app/screens/splash1.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ReportForm(),
+      home: Splash1(),
     );
   }
 }
